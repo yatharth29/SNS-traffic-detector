@@ -1,0 +1,10 @@
+R_DEF: Internal format may change without notice
+local
+id btnLabelEnd
+id btnLabelStart
+id btnStart
+id switchMonitoring
+id tvConfidence
+id tvPrediction
+id tvStatus
+layout activity_main

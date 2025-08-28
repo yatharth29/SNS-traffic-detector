@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎬 Reel Detector"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:textColor="#333333"/>
+
+    <!-- Control Buttons -->
+    <Button 
+        android:id="@+id/btnStart" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:text="🚀 Start Capture"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#4CAF50"/>
+
+    <Button 
+        android:id="@+id/btnLabelStart" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:text="🎯 Label REEL Start"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#2196F3"/>
+
+    <Button 
+        android:id="@+id/btnLabelEnd" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:text="⏹️ Label REEL End"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FF9800"/>
+
+    <!-- Monitoring Switch -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Real-time Monitoring:"
+            android:textSize="16sp"
+            android:layout_marginEnd="16dp"/>
+
+        <Switch
+            android:id="@+id/switchMonitoring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Status Display -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status: Ready"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#666666"/>
+
+    <!-- Prediction Display -->
+    <TextView
+        android:id="@+id/tvPrediction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No prediction"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"
+        android:textColor="#333333"/>
+
+    <!-- Confidence Display -->
+    <TextView
+        android:id="@+id/tvConfidence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confidence: --"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textColor="#666666"/>
+
+    <!-- Status Text -->
+    <TextView 
+        android:id="@+id/tvStatus" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:text="Ready to detect reels!"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="#999999"/>
+
+</LinearLayout>
